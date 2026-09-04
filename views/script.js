@@ -148,6 +148,9 @@ async function checkLoginStatus() {
             document.getElementById('logout-btn').style.display = 'inline-block';
             const data = await response.json();
             currentUserRole = data.role;
+            if (currentUserRole === 'admin') {
+                document.getElementById('add-movie-btn').style.display = 'inline-block';
+            }
         }
     }
     catch (error) {
