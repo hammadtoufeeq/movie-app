@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies App</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+    <h1 class="logo">🎬 MovieVault</h1>
+    <div style="display: flex; gap: 10px;">
+        <a href="/add.html" class="btn btn-primary">+ Add Movie</a>
+        <a href="/login.html" class="btn btn-secondary" id="login-link">Login</a>
+        <button class="btn btn-secondary" id="logout-btn" style="display: none;">Logout</button>
+    </div>
+</nav>
+</nav>
+
+    <main class="container">
+    <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search movies by title...">
+    </div>
+
+    <div class="filter-bar">
+        <select id="genre-filter">
+            <option value="">All Genres</option>
+            <option value="Sci-Fi">Sci-Fi</option>
+            <option value="Horror">Horror</option>
+            <option value="Drama">Drama</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Action">Action</option>
+        </select>
+    </div>
+
+    <div id="movie-list" class="movie-grid"></div>
+
+    <div class="pagination-controls">
+        <button id="prev-page" class="btn btn-secondary">← Previous</button>
+        <span id="page-indicator">Page 1</span>
+        <button id="next-page" class="btn btn-secondary">Next →</button>
+    </div>
+</main> 
+     <script src="/auth.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

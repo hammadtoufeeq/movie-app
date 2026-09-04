@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Movie</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h1 class="logo">🎬 MovieVault</h1>
+        <a href="/" class="btn btn-secondary">← Back</a>
+    </nav>
+
+    <div class="form-card">
+        <h2>Edit Movie</h2>
+
+        <form id="edit-form">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" id="title">
+            </div>
+
+            <div class="form-group">
+                <label for="genre">Genre</label>
+                <input type="text" id="genre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="rating">Rating</label>
+                <input type="number" id="rating" step="any" required>
+            </div>
+
+            <div class="form-group">
+                <label for="releaseyear">Release Year</label>
+                <input type="number" id="releaseyear" required>
+            </div>
+            <div class="form-group">
+                <label for="poster">Poster Image (leave empty to keep current)</label>
+                <input type="file" id="poster" accept="image/jpeg, image/png, image/webp">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Save Changes</button>
+        </form>
+    </div>
+    <script src="/auth.js"></script>
+    <script src="/edit.js"></script>
+</body>
+
+</html>
